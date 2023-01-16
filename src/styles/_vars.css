@@ -1,0 +1,114 @@
+:root {
+    --primary-light-gray: #C7C7C7;
+    --primary-white: white;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+
+    --primary-border-radius: 30px;
+    --secondary-border-radius: 15px;
+
+    --box-shadow: 0 2rem 3rem var(--black);
+}
+
+body{
+    background-color: #000000;
+}
+.container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.container-dashboard{
+    background-color: var(--primary-light-gray);
+    border-top-left-radius: var(--primary-border-radius);
+    border-bottom-left-radius: var(--primary-border-radius);
+}
+
+.today-routine{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.training-card{
+    background-color: #ff0000;
+    border: 10px solid black;
+    margin: 10px;
+    border-radius: var(--primary-border-radius);
+}
+
+.training-card:hover{
+    box-shadow: var(--box-shadow);
+    background-color: blue;
+}
+
+.info-training-cards{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    text-align: left;
+}
+
+.title-training-cards{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+
+.title-training-cards img{
+    background-color: #ACD9B2;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.name-training-subtitle, .equipment-subtitle, .difficulty-subtitle, .instructions-subtitle{
+    font-weight: bold;
+    font-size: large;
+}
+
+.week-weather{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.weather-card{
+    border: 2px solid green;
+    margin: 10px;
+    border-radius: var(--secondary-border-radius);
+}
+
+.weather-card:hover{
+    background-color: green;
+    box-shadow: var(--box-shadow);
+}
+
+.max-temp{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.min-temp{
+    font-size: small;
+}
+
+.profil-container{
+    /* display: flex; */
+    background-color: var(--primary-white);
+    font-family: "Lato", sans-serif;
+    border-top-right-radius: var(--primary-border-radius);
+    border-bottom-right-radius: var(--primary-border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.image-profil{
+    border-radius: 50%;
+}
+
+.info-user{
+    font-weight: bold;
+}
