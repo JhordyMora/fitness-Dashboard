@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import "../styles/global.scss";
 
 const App = () => {
     return (
-    <div id="App">
-        Test!
+    <div>
+        <h1>Test! Hello World</h1>
     </div>
     )
 }
