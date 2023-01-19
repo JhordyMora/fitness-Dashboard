@@ -1,5 +1,5 @@
 :root {
-    --primary-light-gray: #C7C7C7;
+    --primary-light-gray: #EEEEEE;
     --primary-white: white;
     --black: #000000;
     --hospital-green: #ACD9B2;
@@ -11,11 +11,16 @@
     --secondary-border-radius: 15px;
 
     --box-shadow: 0 2rem 3rem var(--black);
+    
 }
 
 body{
+    height: 100%;
+    width: 100%;
     background-color: #000000;
+    font-family: "Lato", sans-serif;
 }
+
 .container{
     display: grid;
     grid-template-columns: 80% 20%;
@@ -25,6 +30,11 @@ body{
     background-color: var(--primary-light-gray);
     border-top-left-radius: var(--primary-border-radius);
     border-bottom-left-radius: var(--primary-border-radius);
+}
+
+.title-basic{
+    display: flex;
+    justify-content: center;
 }
 
 .today-routine{
@@ -45,18 +55,40 @@ body{
 }
 
 .info-training-cards{
+    /* margin: 15px; */
     display: grid;
     grid-template-columns: 35% 65%;
     text-align: left;
 }
 
+.info-training-cards *{
+    margin: 0 0 30px 0;
+}
+
+.grid-item{
+    margin: 0;
+}
+
 .title-training-cards{
-    display: flex;
+    /* display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center; */
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
 }
 
+.subtitle-routine{
+    display: flex;
+    margin: 17px 0 40px 0;
+    width: 100%;
+    justify-content: center;
+}
+
 .title-training-cards img{
+    /* display: flex; */
+    position: absolute;
+    top: 158px;
     background-color: #ACD9B2;
     border-radius: 50%;
     width: 60px;
@@ -111,4 +143,9 @@ body{
 
 .info-user{
     font-weight: bold;
+}
+
+.info-profil{
+    display: flex;
+    justify-content: space-between;
 }
