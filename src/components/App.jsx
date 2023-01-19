@@ -1,11 +1,15 @@
 import React from 'react';
+import Dashboard from '../container/Dashboard';
+import Profil from "../container/Profil";
+import Fitness from '../container/Fitness';
 import "../styles/global.scss";
 
 const App = () => {
     return (
-    <div>
-        <h1>Test! Hello World</h1>
-    </div>
+    <Fitness>
+        <Dashboard></Dashboard>
+        <Profil></Profil>
+    </Fitness>
     )
 }
 
