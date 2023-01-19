@@ -1,5 +1,9 @@
 import React from 'react';
 import "../styles/routine.scss";
+import arms from "../assets/icons/biceps.png";
+import abs from "../assets/icons/abs.png";
+import legs from "../assets/icons/legs.png";
+
 
 const Routine = () => {
     return (
@@ -8,7 +12,7 @@ const Routine = () => {
             <div className="today-routine">
             <div className="training-card arms">
                 <div className="title-training-cards">
-                <img src="../assets/icons/biceps.png" alt="arms" />
+                <img src={arms} alt="arms" />
                 <h2 className="subtitle-routine">Arms</h2>
                 </div>
                 <div className="info-training-cards">
@@ -24,7 +28,7 @@ const Routine = () => {
             </div>
             <div className="training-card abs">
                 <div className="title-training-cards">
-                <img src="../assets/icons/abs.png" alt="abs" />
+                <img src={abs} alt="abs" />
                 <h2 className="subtitle-routine">Abs</h2>
                 </div>
                 <div className="info-training-cards">
@@ -40,7 +44,7 @@ const Routine = () => {
             </div>
             <div className="training-card legs">
                 <div className="title-training-cards">
-                <img src="../assets/icons/legs.png" alt="legs" />
+                <img src={legs} alt="legs" />
                 <h2 className="subtitle-routine">Legs</h2>
                 </div>
                 <div className="info-training-cards">
