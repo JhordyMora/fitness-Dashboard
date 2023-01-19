@@ -1,47 +1,47 @@
-:root {
+/* :root {
     --primary-color-dashboard: #DDDDDD;
     --secondary-color-dashboard: #ffd098;
     --third-color-dashboard: #868a73;
     --gradient-color: linear-gradient(270deg,#ffd098, #ffd098);
     /* --gradient-color: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
+    /* --sm: 14px; */
+    /* --md: 16px; */
+    /* --lg: 18px; */
 
-    --primary-border-radius: 30px;
-    --secondary-border-radius: 15px;
+    /* --primary-border-radius: 30px; */
+    /* --secondary-border-radius: 15px; */
 
-    --box-shadow: 0 2rem 3rem var(black);
-}
+    /* --box-shadow: 0 2rem 3rem var(black); */
+/* } */ 
 
-body{
+/* body{
     height: 100%;
     width: 100%;
     /* background-color: #000000; */
-    font-family: "Lato", sans-serif;
-}
+/*    font-family: "Lato", sans-serif;
+} */
 
-.container{
+/* .container{
     display: grid;
     grid-template-columns: 80% 20%;
-}
+} */
 
-.dashboard-container{
+/* .dashboard-container{
     background-color: var(--primary-color-dashboard);
     border-top-left-radius: var(--primary-border-radius);
     border-bottom-left-radius: var(--primary-border-radius);
-}
+} */
 
-.title-basic{
+/* .title-basic{
     display: flex;
     justify-content: center;
-}
+} */
 
-.today-routine{
+/* .today-routine{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
+} */
 
 .training-card{
     background-color: var(--third-color-dashboard);
@@ -96,19 +96,19 @@ body{
     font-size: large;
 }
 
-.week-weather{
+/* .week-weather{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-}
+} */
 
-.weather-card{
+/* .weather-card{
     display: flex;
     background-color: var(--third-color-dashboard);
     margin: 10px;
     border-radius: var(--secondary-border-radius);
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .weather-card:hover{
     background-color: #83c3ed;
@@ -124,32 +124,32 @@ body{
     font-size: small;
 }
 
-.profil-container{
+/* .profil-container{
     /* background-color: var(--secondary-color-dashboard); */
-    background-image: var(--gradient-color);
+    /* background-image: var(--gradient-color);
     border-top-right-radius: var(--primary-border-radius);
     border-bottom-right-radius: var(--primary-border-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+}  */
 
-.image-profil{
+/* .image-profil{
     border: 4px solid white;
     margin: 15px 0;
     border-radius: 50%;
-}
+} */
 
 .name-user, .title-age, .title-height, .title-weight, .title-gender, .title-bmi{
     font-weight: bold;
 }
 
-.name-user {
+/* .name-user {
     display: flex;
     justify-content: center;
     font-size: 40px;
-}
+} */
 
 .info-profil{
     display: flex;

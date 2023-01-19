@@ -3,9 +3,10 @@ import "../styles/fitness.scss";
 
 const Fitness = ({children}) => {
     return (
-        <div class="fitness">
+        <div className="fitness">
             {children}
         </div>
+
     )
 }
 
