@@ -7,8 +7,12 @@ import "../styles/global.scss";
 const App = () => {
     return (
     <Fitness>
-        <Dashboard></Dashboard>
-        <Profil></Profil>
+        <Dashboard>
+
+        </Dashboard>
+        <Profil>
+            
+        </Profil>
     </Fitness>
     )
 }

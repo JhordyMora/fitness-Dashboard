@@ -1,3 +1,5 @@
+@use "_vars";
+
 .dashboard-container{
     background-color: var(--primary-color-dashboard);
     border-top-left-radius: var(--primary-border-radius);

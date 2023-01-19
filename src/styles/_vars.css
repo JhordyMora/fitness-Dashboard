@@ -177,8 +177,9 @@ body{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .today-routine{
+    .today-routine, .fitness{
         display: flex;
         flex-direction: column;
     }
+
 }
