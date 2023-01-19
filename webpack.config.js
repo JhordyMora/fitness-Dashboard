@@ -39,9 +39,9 @@ module.exports = {
                 use: [
                     {
                         loader: 'file-loader',//['svg-url-loader','file-loader'],
-                        // options: {
-                        //     limit: 10000,
-                        // }
+                        options: {
+                            limit: 10000,
+                        }
                     }
                 ]
             }
