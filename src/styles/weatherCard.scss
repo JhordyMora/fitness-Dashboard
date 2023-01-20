@@ -8,3 +8,17 @@
     flex-direction: column;
     align-items: center;
 }
+
+.weather-card:hover{
+    background-color: #83c3ed;
+    box-shadow: var(--box-shadow);
+}
+
+.max-temp{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.min-temp{
+    font-size: small;
+}

@@ -1,0 +1,17 @@
+@use "_vars";
+
+.subtitle-routine{
+    display: flex;
+    margin: 17px 0 40px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.title-training-cards img{
+    position: absolute;
+    top: 158px;
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
