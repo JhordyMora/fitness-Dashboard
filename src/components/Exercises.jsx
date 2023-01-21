@@ -24,13 +24,13 @@ const Exercises = ({exercise, index}) => {
             </div>
             <div className="info-training-cards">
             <p className="name-training-subtitle">Name:</p>
-            <p className="api-name">{exercise.name}</p>
+            <p className="api-name">{exercise ? exercise.name : 'Loading...'}</p>
             <p className="equipment-subtitle">Equipment:</p>
-            <p className="api-equipment">{exercise.equipment}</p>
+            <p className="api-equipment">{exercise ? exercise.equipment : 'Loading...'}</p>
             <p className="difficulty-subtitle">Difficulty:</p>
-            <p className="api-difficulty">{exercise.difficulty}</p>
+            <p className="api-difficulty">{exercise ? exercise.difficulty : 'Loading...'}</p>
             <p className="instructions-subtitle">Instructions:</p>
-            <p className="api-instructions">{exercise.instructions}</p>
+            <p className="api-instructions">{exercise ? exercise.instructions : 'Loading...'}</p>
             </div>
         </div>
     )
