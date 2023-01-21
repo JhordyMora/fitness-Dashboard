@@ -5,13 +5,14 @@ import NotFound from '../pages/NotFound';
 import "../styles/global.scss";
 
 const App = () => {
+    
     return (
-    <BrowserRouter>
-        <Routes>
-            <Route exact path="/" element={<Home/>} />
-            <Route path="*" element={<NotFound/>} />
-        </Routes>
-    </BrowserRouter>
+        <BrowserRouter>
+            <Routes>
+                <Route exact path="/" element={<Home/>} />
+                <Route path="*" element={<NotFound/>} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 

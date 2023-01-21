@@ -35,11 +35,12 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                // type: 'assets',
+                // type: 'assets/icons/',
                 use: [
                     {
                         loader: 'file-loader',//['svg-url-loader','file-loader'],
                         options: {
+                            name: 'assets/icons/[name].[ext]',
                             limit: 10000,
                         }
                     }

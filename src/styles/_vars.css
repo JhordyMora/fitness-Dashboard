@@ -82,19 +82,19 @@
     justify-content: center;
 } */
 
-.title-training-cards img{
+/* .title-training-cards img{
     position: absolute;
     top: 158px;
     background-color: white;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-}
+} */
 
-.name-training-subtitle, .equipment-subtitle, .difficulty-subtitle, .instructions-subtitle{
+/* .name-training-subtitle, .equipment-subtitle, .difficulty-subtitle, .instructions-subtitle{
     font-weight: bold;
     font-size: large;
-}
+} */
 
 /* .week-weather{
     display: grid;
@@ -141,9 +141,9 @@
     border-radius: 50%;
 } */
 
-.name-user, .title-age, .title-height, .title-weight, .title-gender, .title-bmi{
+/* .name-user, .title-age, .title-height, .title-weight, .title-gender, .title-bmi{
     font-weight: bold;
-}
+} */
 
 /* .name-user {
     display: flex;
@@ -151,7 +151,7 @@
     font-size: 40px;
 } */
 
-.info-profil{
+/* .info-profil{
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -164,7 +164,7 @@
 
 .info-profil div p{
     margin: 10px 0;
-}
+} */
 
 @media (max-width: 2200px) {
     .week-weather{
