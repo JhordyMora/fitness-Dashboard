@@ -36,15 +36,8 @@ const Weather = () => {
             <h2 className="wheather-title title-basic">The Weather the following days</h2>
             <div className="week-weather">
                 <WeatherCard/>
-                <WeatherCardForecast weatherForecast = {weatherForecast}/>
                 {weatherForecast.map((weatherForecast, index)=> <WeatherCardForecast key={index} weatherForecast={weatherForecast}/>)}
             </div>
-                {/* <WeatherCardForecast/>
-                <WeatherCardForecast/>
-                <WeatherCardForecast/>
-                <WeatherCardForecast/>
-                <WeatherCardForecast/>
-            </div> */}
         </div>
     )
 }
