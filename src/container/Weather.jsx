@@ -8,7 +8,7 @@ const API = "https://api.openweathermap.org/data/2.5/forecast?lat=52.52&lon=13.4
 
 const Weather = () => {
 
-    const weatherForecast = useGetWeatherComming(API);//[]//
+    const weatherForecast = []//useGetWeatherComming(API);//
 
     return (
         <div className="weather-container">

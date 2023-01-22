@@ -8,7 +8,7 @@ import Time from "../components/Time";
 import "../styles/profil.scss";
 import useGetInfoUser from '../hooks/useGetInfoUser';
 
-const API = "https://dummyjson.com/users/"//["Loading.."]//
+const API = ["Loading.."]//"https://dummyjson.com/users/"//
 
 const Profil = () => {
 
