@@ -17,8 +17,8 @@ const muscleToImage = {
 
 const Exercises = ({exercise, index}) => {
     return (
-        <div className="training-card abs" key={index}>
-            <div className="title-training-cards">
+        <div className="training-card abs">
+            <div className="title-training-cards" key={index}>
             <img src={muscleToImage[exercise.muscle]} alt={exercise.muscle} />
             <h2 className="subtitle-routine">{(exercise.muscle).toUpperCase()}</h2>
             </div>
