@@ -40,4 +40,14 @@
         position: unset;
     }
 
+    .name-training-subtitle, .equipment-subtitle, .difficulty-subtitle, .instructions-subtitle{
+        font-weight: bold;
+        font-size: small;
+
+    }
+    
+    .info-training-cards{
+        font-size: small;
+    }
+
 }
