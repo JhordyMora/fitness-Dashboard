@@ -6,7 +6,7 @@ const API = "https://api.openweathermap.org/data/2.5/weather?lat=52.52&lon=13.41
 
 const WeatherCard = () => {
 
-    const WeatherToday = ""//useGetWeatherToday(API);//
+    const WeatherToday = useGetWeatherToday(API);//""//
 
     return (
         <div className="weather-card day-first">

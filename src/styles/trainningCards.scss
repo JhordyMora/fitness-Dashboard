@@ -7,6 +7,13 @@
     justify-content: center;
 }
 
+.training-card{
+    background-color: var(--secondary-color-dashboard);
+    margin: 10px;
+    padding: 10px;
+    border-radius: var(--primary-border-radius);
+}
+
 .title-training-cards img{
     position: absolute;
     top: 158px;
@@ -19,4 +26,24 @@
 .name-training-subtitle, .equipment-subtitle, .difficulty-subtitle, .instructions-subtitle{
     font-weight: bold;
     font-size: large;
+}
+
+.training-card:hover{
+    border: 2px solid var(--border-color);
+    box-shadow: var(--box-shadow);
+    background-color:var(--third-color-dashboard);
+}
+
+.info-training-cards{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    text-align: left;
+}
+
+.info-training-cards *{
+    margin: 0 5px 30px 0;
+}
+
+.api-instructions{
+    text-align: justify;
 }

@@ -20,15 +20,15 @@ const Exercises = ({exercise, index}) => {
         <div className="training-card abs" key={index}>
             <div className="title-training-cards">
             <img src={muscleToImage[exercise.muscle]} alt={exercise.muscle} />
-            <h2 className="subtitle-routine">{exercise.muscle}</h2>
+            <h2 className="subtitle-routine">{(exercise.muscle).toUpperCase()}</h2>
             </div>
             <div className="info-training-cards">
             <p className="name-training-subtitle">Name:</p>
             <p className="api-name">{exercise ? exercise.name : 'Loading...'}</p>
             <p className="equipment-subtitle">Equipment:</p>
-            <p className="api-equipment">{exercise ? exercise.equipment : 'Loading...'}</p>
+            <p className="api-equipment">{exercise ? (exercise.equipment)[0].toUpperCase() + (exercise.equipment).substring(1) : 'Loading...'}</p>
             <p className="difficulty-subtitle">Difficulty:</p>
-            <p className="api-difficulty">{exercise ? exercise.difficulty : 'Loading...'}</p>
+            <p className="api-difficulty">{exercise ? (exercise.difficulty)[0].toUpperCase() + (exercise.difficulty).substring(1) : 'Loading...'}</p>
             <p className="instructions-subtitle">Instructions:</p>
             <p className="api-instructions">{exercise ? exercise.instructions : 'Loading...'}</p>
             </div>

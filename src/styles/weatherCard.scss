@@ -2,7 +2,7 @@
 
 .weather-card{
     display: flex;
-    background-color: var(--third-color-dashboard);
+    background-color: var(--secondary-color-dashboard);
     margin: 10px;
     border-radius: var(--secondary-border-radius);
     flex-direction: column;
@@ -10,8 +10,9 @@
 }
 
 .weather-card:hover{
-    background-color: #83c3ed;
+    background-color: var(--third-color-dashboard);
     box-shadow: var(--box-shadow);
+    border: 2px solid var(--border-color);
 }
 
 .max-temp{

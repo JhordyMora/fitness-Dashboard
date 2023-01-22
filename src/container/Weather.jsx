@@ -8,11 +8,11 @@ const API = "https://api.openweathermap.org/data/2.5/forecast?lat=52.52&lon=13.4
 
 const Weather = () => {
 
-    const weatherForecast = []//useGetWeatherComming(API);//[]//
+    const weatherForecast = useGetWeatherComming(API);//[]//
 
     return (
         <div className="weather-container">
-            <h2 className="wheather-title title-basic">The Weather the following days</h2>
+            <h2 className="wheather-title title-basic">Weather Forecast</h2>
             <div className="week-weather">
                 <WeatherCard/>
                 {weatherForecast.map((weatherForecast, index)=> <WeatherCardForecast key={index} weatherForecast={weatherForecast}/>)}

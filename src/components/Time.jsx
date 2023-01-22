@@ -7,7 +7,7 @@ const API = "https://worldtimeapi.org/api/timezone/Europe/Berlin";
 
 const Time = () => {
 
-    const time = "...Loading"//useGetTime(API);//
+    const time = useGetTime(API);//"...Loading"//
 
     return (
     <div className="time">
