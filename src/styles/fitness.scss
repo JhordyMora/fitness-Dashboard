@@ -48,6 +48,9 @@
     
     .info-training-cards{
         font-size: small;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        text-align: left;
     }
 
 }
