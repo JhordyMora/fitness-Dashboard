@@ -1,9 +1,8 @@
 import React from 'react';
-import useGetWeatherToday from '../hooks/useGetWeatherToday';
 import "../styles/weatherCard.scss";
+import useGetWeatherToday from '../hooks/useGetWeatherToday';
 
-require('dotenv').config();
-const API = `https://api.openweathermap.org/data/2.5/weather?lat=52.52&lon=13.41&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
+const API = "https://api.openweathermap.org/data/2.5/weather?lat=52.52&lon=13.41&units=metric&appid=6170a5f2b56cea956589750a64079780";
 
 const WeatherCard = () => {
 
