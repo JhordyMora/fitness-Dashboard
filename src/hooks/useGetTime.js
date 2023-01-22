@@ -6,12 +6,13 @@ const useGetTime = (API) => {
 
     useEffect(() => {
         async function fetchData() {
-
             const response = await axios(API);
             setTime(response.data.datetime);
         }
-        fetchData();
+        const intervalId = setInterval(fetchData, 1000);
+        return () => clearInterval(intervalId);
     }, []);
+
     return time;
 }
 

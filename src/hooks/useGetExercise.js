@@ -11,6 +11,13 @@ const useGetExercise = (API) => {
         [`abductors`,`adductors`,`calves`,`quadriceps`,`hamstrings`,`glutes`]
     ]
 
+    const muscleToImage = [
+        "../assets/icons/biceps.png",
+        "../assets/icons/abs.png",
+        "../assets/icons/legs.png",
+    ]
+    
+
     useEffect(()=>{
         async function fetchData() {
             for(const bodyPart of bodyParts){
@@ -20,10 +27,17 @@ const useGetExercise = (API) => {
                 const randomExercise = Math.floor(Math.random() * 10);
                 exercisesList.push(response.data[randomExercise]);
             }
+            for(let index in muscleToImage){
+                exercisesList[index].icon = muscleToImage[index];
+                // console.log(exercisesList[index].icon);
+            }
+
             setPart(exercisesList);
             // console.log(exercisesList);
         }
+        const intervalId = setInterval(fetchData, 120000);//Every hour will be update 
         fetchData();
+        return () => clearInterval(intervalId);
     },[])
     return part;
 }

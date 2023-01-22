@@ -10,7 +10,9 @@ const useGetWeatherToday = (API) => {
             setWeather(response.data);
             // console.log(response.data);
         }
+        const intervalId = setInterval(fetchData, 3600000);// Update is is every hour 
         fetchData();
+        return ()=> clearInterval(intervalId);
     },[])
     return weather;
 }

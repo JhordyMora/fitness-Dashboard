@@ -22,7 +22,9 @@ const useGetWeatherComming = (API) => {
             setWeatherForecast(infoComingDays);
 
         }
+        const intervalId = setInterval(fetchData,10800000); // Every 3 hours will be update
         fetchData();
+        return () => clearInterval(intervalId);
     },[])
 
     return weatherForecast;

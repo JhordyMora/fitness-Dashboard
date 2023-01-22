@@ -41,7 +41,8 @@ module.exports = {
                         loader: 'file-loader',//['svg-url-loader','file-loader'],
                         options: {
                             name: 'assets/icons/[name].[ext]',
-                            limit: 20000
+                            publicPath: '/',
+                            limit: 10000
                         }
                     }
                 ]
