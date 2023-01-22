@@ -7,21 +7,13 @@ import Bmi from "../components/Bmi";
 import Time from "../components/Time";
 import axios from "axios";
 import "../styles/profil.scss";
+import useGetInfoUser from '../hooks/useGetInfoUser';
 
-// const API = "https://dummyjson.com/users/";
+const API = "https://dummyjson.com/users/";
 
 const Profil = () => {
-    const [persona, setPersona] = useState([]);
 
-    useEffect(()=>{
-        async function fetchData() {
-            const randomPersona = Math.floor(Math.random() * 100);
-            const response = await axios(API+randomPersona);
-            setPersona(response.data);
-            // console.log(response.data);
-        }
-        fetchData();
-    },[])
+    const persona = useGetInfoUser(API);
 
     return (
         <aside className="profil-container">
