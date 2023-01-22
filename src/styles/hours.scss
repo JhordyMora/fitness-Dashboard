@@ -1,5 +1,4 @@
 @use "_vars";
-@import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 
 .hours{
@@ -7,6 +6,5 @@
     background-color: white;
     border-radius: var(--secondary-border-radius);
     font-size: x-large;
-    font-family:orbitron;
     margin: var(--sm);
 }

@@ -10,7 +10,7 @@ const WeatherCard = () => {
 
     return (
         <div className="weather-card day-first">
-            <h2 className="day">Monday</h2>
+            <h2 className="day">Today</h2>
             <img src={`http://openweathermap.org/img/wn/${WeatherToday.weather ? WeatherToday.weather[0].icon : '10d'}@2x.png`} alt="day-first" />
             <div className="temperatures">
                 <p className="max-temp">{WeatherToday.main ? WeatherToday.main.temp_max : 'Loading...'}°<span className="min-temp">{WeatherToday.main ? WeatherToday.main.temp_min : 'Loading...'}°</span></p>

@@ -1,8 +1,12 @@
 import React from 'react';
+import Error from '../container/Error';
+import "../styles/notFound.scss"
 
 const NotFound = () => {
     return (
-        <div>Not Found, Error 404</div>
+        <div className='notFound'>
+            <Error/>
+        </div>
     )
 }
 
