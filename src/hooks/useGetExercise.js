@@ -1,5 +1,9 @@
 import { useEffect, useState} from 'react';
 import axios from "axios";
+import IconAbs from "../assets/icons/abs.png";
+import IconLegs from "../assets/icons/legs.png";
+import IconArms from "../assets/icons/biceps.png";
+
 
 const useGetExercise = (API) => {
     const [part, setPart] = useState([]);
@@ -12,9 +16,9 @@ const useGetExercise = (API) => {
     ]
 
     const muscleToImage = [
-        "../assets/icons/biceps.png",
-        "../assets/icons/abs.png",
-        "../assets/icons/legs.png",
+        IconArms,
+        IconAbs,
+        IconLegs,
     ]
     
 
