@@ -20,7 +20,7 @@
         border-top-right-radius: 0%;
         border-bottom-right-radius: var(--primary-border-radius);
         border-bottom-left-radius: var(--primary-border-radius);
-        
+        margin: 0px;
     }
 
     .week-weather{
@@ -32,8 +32,12 @@
         flex-direction: column;
     }
 
-    .title-training-cards img:nth-child(1){
-        display: none;
+    .today-routine{
+        display: flex;
+    }
+
+    .title-training-cards img{
+        position: unset;
     }
 
 }
