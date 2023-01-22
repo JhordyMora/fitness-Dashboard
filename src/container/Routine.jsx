@@ -6,7 +6,7 @@ import "../styles/routine.scss";
 const API = "https://api.api-ninjas.com/v1/exercises?muscle=";
 
 const Routine = () => {
-    const exercises = ["...Loading"]//useGetExercise(API);
+    const exercises = useGetExercise(API);//["...Loading"]//
 
     return (
         <div className="today-routine-container">

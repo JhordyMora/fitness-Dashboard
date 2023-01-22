@@ -5,7 +5,6 @@ import Weight from '../components/Weight';
 import Gender from '../components/Gender';
 import Bmi from "../components/Bmi";
 import Time from "../components/Time";
-import axios from "axios";
 import "../styles/profil.scss";
 import useGetInfoUser from '../hooks/useGetInfoUser';
 

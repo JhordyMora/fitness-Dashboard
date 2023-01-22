@@ -18,7 +18,7 @@ const useGetWeatherComming = (API) => {
                     calendarDay = (response.data.list[i].dt_txt).substring(0, 10);
                 }
             }
-            console.log(infoComingDays);
+            // console.log(infoComingDays);
             setWeatherForecast(infoComingDays);
 
         }

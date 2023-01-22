@@ -1,10 +1,7 @@
 import React from 'react';
 import "../styles/weatherCard.scss";
-// import useGetWeatherToday from '../hooks/useGetWeatherToday';
 
 const WeatherCardForecast = ({weatherForecast, index}) => {
-
-    // const WeatherToday = ""//useGetWeatherToday(API);
 
     return (
         <div className="weather-card day-first" key={index}>

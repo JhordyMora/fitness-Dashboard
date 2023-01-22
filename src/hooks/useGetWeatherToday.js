@@ -8,7 +8,7 @@ const useGetWeatherToday = (API) => {
         async function fetchData() {
             const response = await axios(API);
             setWeather(response.data);
-            console.log(response.data);
+            // console.log(response.data);
         }
         fetchData();
     },[])

@@ -1,20 +1,13 @@
-import React, { useEffect, useState} from 'react';
+import React from 'react';
+import useGetTime from '../hooks/useGetTime';
 import "../styles/time.scss";
-import axios from "axios";
+import "../styles/hours.scss"
 
-// const API = "https://worldtimeapi.org/api/timezone/Europe/Berlin";
+const API = "https://worldtimeapi.org/api/timezone/Europe/Berlin";
 
 const Time = () => {
-    const [time,setTime]= useState("");
 
-    useEffect(() => {
-        async function fetchData() {
-
-            const response = await axios(API);
-            setTime(response.data.datetime);
-        }
-        fetchData();
-    }, []);
+    const time = useGetTime(API);
 
     return (
     <div className="time">
